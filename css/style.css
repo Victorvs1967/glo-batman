@@ -1,4 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+@font-face {
+	font-family: 'Museo Sans Cyrl 700';
+	src: url('../fonts/MuseoSans/MuseoSansCyrl-700.eot');
+	src: local('../fonts/MuseoSans/MuseoSansCyrl-700'),
+		url('../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSans/MuseoSansCyrl-700.woff') format('woff'),
+		url('../fonts/MuseoSans/MuseoSansCyrl-700.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('../fonts/Roboto/Roboto-Regular'),
+		url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('../fonts/Roboto/Roboto-Bold'),
+		url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 
 *, *::befor, *::after {
   box-sizing: border-box;
@@ -8,14 +33,19 @@
   outline: none;
 }
 
-html, body {
+html, 
+body {
   /* 1rem = 10px */
-  font-size: 62.5%; 
-  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/batman.jpeg);
+  background-repeat: no-repeat;
+  background-position: -30rem -5rem;
+  background-size: 180%;
 }  
 
 .container {
@@ -26,7 +56,7 @@ body {
 /* heder */
 
 .header {
-  padding: 6.4rem 0;
+  padding: 4rem 0;
 }
 
 .header .container {
@@ -75,6 +105,86 @@ body {
   margin-right: 2rem;
 }
 
+/* main */
+
+.main h1 {
+	font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 7.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main .container {
+  display: flex;
+  align-items: center;
+}
+
+.main__content {
+  width: 52.8rem;
+  height: 35.6rem;
+  margin-right: 31.5rem;
+}
+
+.main__content-info {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.main__content-stars {
+  margin-bottom: 1.4rem;
+}
+
+.main__content-title {
+  line-height: 9.1rem;
+  color: #fff;
+}
+
+.main__content-description {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #fff;
+  margin-bottom: 4.1rem;
+}
+
+.main__content-btn {
+  width: 24.5rem;
+  height: 6rem;
+  background-color: #262626;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main__play-btn {
+  width: 13.2rem;
+  height: 13.2rem;
+  cursor: pointer;
+}
+
+.main__series {
+  width: 41.6rem;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__series-poster img {
+  width: 16.4rem;
+  height: 10.5rem;
+  border-radius: 0.8rem;
+}
+
+.main__series-poster span {
+  position: relative;
+  left: 1rem;
+  bottom: 1.5rem;
+  color: #fff;
+}
+
 /* footer */
 
 .footer {
@@ -114,4 +224,14 @@ body {
 .footer__menu-item {
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  body {
+    /* 1rem = 8px */
+    font-size: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
 }
