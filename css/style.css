@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+
+*, *::befor, *::after {
+  box-sizing: border-box;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+html, body {
+  /* 1rem = 10px */
+  font-size: 62.5%; 
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+}  
+
+.container {
+  width: 113.5rem;
+  margin: 0 auto;
+}
+
+/* heder */
+
+.header {
+  padding: 6.4rem 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.header__logo {
+  width: 7.9rem;
+  height: 2.8rem;
+  margin-right: 3.9rem;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__nav a:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.header__socials {
+  display: flex;
+  align-items: center;
+}
+
+.header__social-icon {
+  width: 1.7rem;
+  height: 1.6rem;
+}
+
+.header__social-icon:not(:last-child) {
+  margin-right: 2rem;
+}
+
+/* footer */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  background-color: #262626;
+  font-size: 1.4rem;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  color: #fff;
+
+}
+
+.footer__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__menu li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.footer__menu-item {
+  text-decoration: none;
+  color: #fff;
+}
