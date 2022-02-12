@@ -37,7 +37,7 @@ html,
 body {
   /* 1rem = 10px */
   font-size: 62.5%;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -68,7 +68,6 @@ body {
 .header__menu {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
 }
 
 .header__logo {
@@ -84,6 +83,8 @@ body {
 
 .header__nav a {
   text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   color: #fff;
 }
 
@@ -125,22 +126,37 @@ body {
   margin-right: 31.5rem;
 }
 
-.main__content-info {
+.main__rating {
+}
+
+.main__rating-title {
   font-size: 1.4rem;
   color: #fff;
   margin-bottom: 1.6rem;
 }
 
-.main__content-rating {
+.main__rating-stars {
   display: flex;
   align-items: center;
-}
-.main__content-stars {
   margin-bottom: 1.4rem;
 }
 
-.main__content-rating span {
-  margin-left: 1rem;
+.main__rating-star {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url(../img/start.svg);
+}
+
+.main__rating-star:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
+.main__rating-star.outline {
+  background-image: url(../img/star-outline.svg);
+}
+
+.main__rating-score {
+  margin-left: 0.9rem;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -216,8 +232,7 @@ body {
 }
 
 .footer__copy {
-  color: #fff;
-
+  color: #686767;
 }
 
 .footer__menu {
@@ -233,7 +248,7 @@ body {
 
 .footer__menu-item {
   text-decoration: none;
-  color: #fff;
+  color: #686767;
 }
 
 @media (max-width: 900px) {
