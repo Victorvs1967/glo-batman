@@ -126,9 +126,6 @@ body {
   margin-right: 31.5rem;
 }
 
-.main__rating {
-}
-
 .main__rating-title {
   font-size: 1.4rem;
   color: #fff;
@@ -161,19 +158,19 @@ body {
   color: #fff;
 }
 
-.main__content-title {
+.main__title {
   line-height: 9.1rem;
   color: #fff;
 }
 
-.main__content-description {
+.main__description {
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: #fff;
   margin-bottom: 4.1rem;
 }
 
-.main__content-btn {
+.main__btn {
   width: 24.5rem;
   height: 6rem;
   background-color: #262626;
