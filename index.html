@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <script src="js/swiper-bundle.js" defer></script>
   <script src="js/main.js" defer></script>
 
 </head>
@@ -60,32 +62,49 @@
 
           </div>
         <h1 class="main__title">Бэтмен</h1>
-        <p class="main__description">
-          После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением беспощадноговозмездия. Когда в городе происходит серия жестоких нападений на представителей элиты, загадочные улики приводят БрюсаУэйна в самые темные закоулки преступного мира. Теперь под прицелом оказывается сам Бэтмен.
-        </p>
+        <div class="main__description-wrap">
+          <p class="main__description">
+            После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением беспощадноговозмездия. Когда в городе происходит серия жестоких нападений на представителей элиты, загадочные улики приводят БрюсаУэйна в самые темные закоулки преступного мира. Теперь под прицелом оказывается сам Бэтмен.
+          </p>
+          <div class="main__play-button">
+            <div class="play-btn-circle">
+              <a href="#"><img src="img/play-btn.svg" alt="play button"></a>
+            </div>
+          </div>
+        </div>
         <button class="main__button">Купить билеты</button>
-      </div>
-      <div class="main__play-button">
-        <a href="#"><img src="img/play-btn.svg" alt="play button"></a>
-      </div>
-    </div>
-    <div class="container">
-      <div class="main__series">
-        <div class="main__series-poster">
-          <a href="#">
-            <img src="img/poster01.png" alt="poster">
-          </a>
-          <span>Трейлер #1</span>
+
+        <div class="main__slider-wrap">
+          <div class="main__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="main__slider-slide swiper-slide">
+                <img src="img/poster01.png" alt="poster">
+                <span>Трейлер #1</span>
+              </div>
+              <div class="main__slider-slide swiper-slide">
+                <img src="img/poster02.png" alt="poster">
+                <span>Трейлер #2</span>
+              </div>
+              <div class="main__slider-slide swiper-slide">
+                <img src="img/poster01.png" alt="poster">
+                <span>Трейлер #3</span>
+              </div>
+              <div class="main__slider-slide swiper-slide">
+                <img src="img/poster02.png" alt="poster">
+                <span>Трейлер #4</span>
+              </div>
+              <div class="main__slider-slide swiper-slide">
+                <img src="img/poster01.png" alt="poster">
+                <span>Трейлер #5</span>
+              </div>
+              <div class="main__slider-slide swiper-slide">
+                <img src="img/poster02.png" alt="poster">
+                <span>Трейлер #6</span>
+              </div>
+            </div>
+          </div>
+          <img class="main__slider-arrow" src="img/arrow.svg" alt="arrow">
         </div>
-        <div class="main__series-poster">
-          <a href="#">
-            <img src="img/poster02.png" alt="poster">
-          </a>
-          <span>Трейлер #2</span>
-        </div>
-        <a href="#">
-          <img class="main__series-arrow" src="img/arrow.svg" alt="arrow">
-        </a>
       </div>
     </div>
   </section>
