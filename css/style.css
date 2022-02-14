@@ -572,4 +572,10 @@ img {
   .main {
     background-size: 460%;
   }
+
+  .modal__inner {
+    width: 90%;
+    height: 35%;
+
+  }
 }
