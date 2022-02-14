@@ -1,7 +1,6 @@
 const swiper = new Swiper('.main__slider', {
   spaceBetween: 30,
   loop: true,
-  // Navigation arrows
   navigation: {
     nextEl: '.main__slider-arrow',
   },
