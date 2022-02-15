@@ -73,79 +73,80 @@ img {
 
 @media (max-width: 108em) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
+
 }
 
 @media (max-width: 105em) {
   html {
-    font-size: 8.75px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 91.5em) {
   html {
-    font-size: 7.9px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 91em) {
   html {
-    font-size: 8.4px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 90em) {
   html {
-    font-size: 7.9px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 80em) {
   html {
-    font-size: 7.2px
+    font-size: 10px;
   }
 }
 
 @media (max-width: 72em) {
   html {
-    font-size: 6.5px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 64em) {
   html {
-    font-size: 5.5px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 44em) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 38em) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 34em) {
   html {
-    font-size: 7px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 26em) {
   html {
-    font-size: 4.5px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 21em) {
   html {
-    font-size: 4.4px;
+    font-size: 10px;
   }
 }
 
@@ -212,8 +213,9 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background: url(../img/batman.jpeg) no-repeat -80em top;
-  background-size: 180%;
+  background-image: url("../img/batman.jpeg");
+  background-repeat: no-repeat;
+  background-position: 40% top;
 }
 
 .main .container {
@@ -507,8 +509,7 @@ img {
   }
 
   .main {
-    background-position: 40% top;
-    background-size: 350%;
+    background-size: 400%;
     padding: 0 3rem;
   }
 
@@ -570,7 +571,11 @@ img {
   }
 
   .main {
-    background-size: 460%;
+    background-size: 450%;
+  }
+
+  .main__slider {
+    width: 20rem;
   }
 
   .modal__inner {
